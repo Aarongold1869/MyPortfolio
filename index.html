@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aaron Goldstein</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,8 +24,8 @@
             background: #F67362;
         }
 
-        .white {
-            background: #707070;
+        .black {
+            background: black;
         }
 
         body {
@@ -42,7 +42,58 @@
         }
 
         h1:hover {
-            font-size: 52px;
+            font-size: 50px;
+        }
+
+        h2 {
+            font-size: 28px;
+            transition: font-size 0.3s ease-out;
+        }
+
+        h2:hover {
+            font-size: 29px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        ul {
+            list-style: none;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        nav {
+            position: fixed;
+            display: flex;
+            justify-content: flex-end;
+            z-index: 10;
+            width: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+        }
+
+        .nav-list {
+            display: flex;
+            margin-right: 2rem;
+        }
+
+        .nav-list-item {
+            transition: background-color 0.3s ease-out;
+        }
+
+        .nav-list-item:hover {
+            background-color: #558592;
+        }
+
+        .nav-list a {
+            display: block;
+            font-size: 1.5rem;
+            padding: 1rem;
         }
 
         section {
@@ -81,8 +132,19 @@
 </head>
 <body>
 
+    <nav id="navbar" class="black">
+        <ul class="nav-list"> 
+            <li class="nav-list-item"><a id="section-link" href="#welcome">Welcome</a></li>
+            <li class="nav-list-item"><a id="section-link" href="#projects">Projects</a></li>
+            <li class="nav-list-item"><a id="section-link" href="#background">Background</a></li>
+            <li class="nav-list-item"><a id="section-link" href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
     <section id="welcome" class='blue'>
-        <h1>Hi, I'm Aaron Goldstein</h1>
+        <h1>Hi, I'm Aaron Goldstein!</h1>
+        <h2>I'm a software developer.</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam distinctio, possimus, qui iste veniam aperiam sunt magni veritatis voluptatibus ex dicta suscipit nemo repudiandae est! Facere in veritatis necessitatibus eveniet!</p>
     </section>
 
@@ -95,7 +157,7 @@
 
     <div class="spacer layer1 flip"></div>
 
-    <section id="education" class='blue'>
+    <section id="background" class='blue'>
         <h1>Background and Education</h1>
         <p>Velit, ad voluptate adipisci quas illum, voluptatibus eligendi modi asperiores eius quis facere cupiditate explicabo suscipit neque sunt minima aliquam. Aliquam, expedita optio asperiores doloribus sit incidunt ipsum quos placeat.</p>
     </section>
@@ -106,6 +168,8 @@
         <h1>Get in Touch</h1>
         <p>Officia consequuntur, natus qui tempore asperiores nemo accusamus vitae illum a nulla, doloremque eos iusto sit repudiandae quia culpa velit exercitationem dolore adipisci obcaecati facere quam explicabo. Sint, laborum odit?</p>
     </section>
+
+    <div class="spacer layer2 flip"></div>
 
 </body>
 </html>
