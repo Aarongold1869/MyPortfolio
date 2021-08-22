@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+
+    <style>
+        
+        .blue {
+            background: #086070
+        }
+
+        .orange {
+            background: #FA9039;
+        }
+
+        .salmon {
+            background: #F67362;
+        }
+
+        .white {
+            background: #707070;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            background: black;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            font-size: 48px;
+            transition: font-size 0.3s ease-out;
+        }
+
+        h1:hover {
+            font-size: 52px;
+        }
+
+        section {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 400px;
+            padding: 50px 20vw;
+            padding-bottom: 0;
+        }
+
+        .spacer {
+            aspect-ratio: 960/298;
+            width:100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+        }
+
+        .layer1 {
+            background-image: url('./layered-waves-haikei.svg');
+        }
+
+        .layer2 {
+            background-image: url('./layered-waves-blue-salmon.svg');
+        }
+
+        .flip {
+            transform: rotate(180deg);
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <section id="welcome" class='blue'>
+        <h1>Hi, I'm Aaron Goldstein</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam distinctio, possimus, qui iste veniam aperiam sunt magni veritatis voluptatibus ex dicta suscipit nemo repudiandae est! Facere in veritatis necessitatibus eveniet!</p>
+    </section>
+
+    <div class="spacer layer1"></div>
+
+    <section id="projects" class='orange'>
+        <h1>My Projects</h1>
+        <p>Quibusdam, molestias odio. Cum expedita aliquam voluptatum nostrum itaque totam esse tempora repellat! Blanditiis eum mollitia hic tenetur veritatis sit enim praesentium, ea veniam recusandae quibusdam porro quas laborum obcaecati.</p>
+    </section>
+
+    <div class="spacer layer1 flip"></div>
+
+    <section id="education" class='blue'>
+        <h1>Background and Education</h1>
+        <p>Velit, ad voluptate adipisci quas illum, voluptatibus eligendi modi asperiores eius quis facere cupiditate explicabo suscipit neque sunt minima aliquam. Aliquam, expedita optio asperiores doloribus sit incidunt ipsum quos placeat.</p>
+    </section>
+
+    <div class="spacer layer2"></div>
+
+    <section id="contact" class='salmon'>
+        <h1>Get in Touch</h1>
+        <p>Officia consequuntur, natus qui tempore asperiores nemo accusamus vitae illum a nulla, doloremque eos iusto sit repudiandae quia culpa velit exercitationem dolore adipisci obcaecati facere quam explicabo. Sint, laborum odit?</p>
+    </section>
+
+</body>
+</html>
