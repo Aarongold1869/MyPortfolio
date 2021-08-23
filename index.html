@@ -12,20 +12,31 @@
 
     <style>
         
+        :root {
+            --main-blue: #086070;
+            --main-orange: #FA9039;
+            --main-salmon: #F67362;
+        }
+
         .blue {
-            background: #086070
+            background: var(--main-blue)
         }
 
         .orange {
-            background: #FA9039;
+            background: var(--main-orange);
         }
 
         .salmon {
-            background: #F67362;
+            background: var(--main-salmon);
         }
 
         .black {
             background: black;
+        }
+
+        .white {
+            background: white;
+            color: black;
         }
 
         body {
@@ -87,7 +98,8 @@
         }
 
         .nav-list-item:hover {
-            background-color: #558592;
+            background-color: #60ddb3;
+            text-decoration: underline;
         }
 
         .nav-list a {
@@ -106,6 +118,40 @@
             padding-bottom: 0;
         }
 
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            border-radius: 2px;
+            min-width: 150px;
+            justify-content: center;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            max-width: 980px;
+            margin-top: 4rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-details {
+            font-size: 2rem;
+            font-weight: bold;
+            color: black;
+            text-shadow: 1px 1px 1px grey;
+            transition: transform 0.3s ease-out;
+        }
+
+        .contact-details:hover {
+            transform: translateY(7px);
+        }
+
+        img {
+            max-width: 30px;
+            filter: drop-shadow( 1px 1px 1px grey);
+        }
+
         .spacer {
             aspect-ratio: 960/298;
             width:100%;
@@ -120,7 +166,7 @@
         }
 
         .layer2 {
-            background-image: url('./layered-waves-blue-salmon.svg');
+            background-image: url('./layered-waves-blue-white.svg');
         }
 
         .flip {
@@ -164,9 +210,38 @@
 
     <div class="spacer layer2"></div>
 
-    <section id="contact" class='salmon'>
-        <h1>Get in Touch</h1>
-        <p>Officia consequuntur, natus qui tempore asperiores nemo accusamus vitae illum a nulla, doloremque eos iusto sit repudiandae quia culpa velit exercitationem dolore adipisci obcaecati facere quam explicabo. Sint, laborum odit?</p>
+    <section id="contact" class='white'>
+        <h1>Let's work together...</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <div class="contact-links">
+
+            <a
+                id="profile-link"
+                href="https://github.com/Aarongold1869"
+                target="_blank"
+                class="btn contact-details"
+            ><img src='./github-logo.svg'></img> GitHub
+            </a>
+        
+            <a
+                id="profile-link"
+                href="https://www.linkedin.com/in/aarongold/"
+                target="_blank"
+                class="btn contact-details"
+            ><img src='./linkedin-logo.svg'></img> LinkedIn   
+            </a>
+
+            <a
+                id="profile-link"
+                href="mailto: aarongold1869@gmail.com"
+                target="_blank"
+                class="btn contact-details"
+            ><img src='./email.svg'></img> Email
+            </a>
+
+        </div>
+
     </section>
 
     <div class="spacer layer2 flip"></div>
