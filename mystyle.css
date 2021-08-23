@@ -1,0 +1,160 @@
+:root {
+    --main-blue: #086070;
+    --main-orange: #FA9039;
+    --main-salmon: #F67362;
+}
+
+.blue {
+    background: var(--main-blue)
+}
+
+.orange {
+    background: var(--main-orange);
+}
+
+.salmon {
+    background: var(--main-salmon);
+}
+
+.black {
+    background: black;
+}
+
+.white {
+    background: white;
+    color: black;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background: black;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 48px;
+    transition: font-size 0.3s ease-out;
+}
+
+h1:hover {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 28px;
+    transition: font-size 0.3s ease-out;
+}
+
+h2:hover {
+    font-size: 29px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 10;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 2rem;
+}
+
+.nav-list-item {
+    transition: background-color 0.3s ease-out;
+}
+
+.nav-list-item:hover {
+    background-color: #60ddb3;
+    text-decoration: underline;
+}
+
+.nav-list a {
+    display: block;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 50px 20vw;
+    padding-bottom: 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+    min-width: 150px;
+    justify-content: center;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+
+.contact-details {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    text-shadow: 1px 1px 1px grey;
+    transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+    transform: translateY(7px);
+}
+
+img {
+    max-width: 30px;
+    filter: drop-shadow( 1px 1px 1px grey);
+}
+
+.spacer {
+    aspect-ratio: 960/298;
+    width:100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.layer1 {
+    background-image: url('./images/design-elements/layered-waves-haikei.svg');
+}
+
+.layer2 {
+    background-image: url('./images/design-elements/layered-waves-blue-white.svg');
+}
+
+.flip {
+    transform: rotate(180deg);
+}
